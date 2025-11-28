@@ -8,9 +8,9 @@
 
 <table>
   <tr>
-    <td><b>Stabilitas</b><br>Menjaga layanan tetap tenang meski traffic padat.</td>
-    <td><b>Visibility</b><br>Dashboard & alert yang mudah dipakai tim non-dev.</td>
-    <td><b>Automation</b><br>Skrip & pipeline yang memangkas pekerjaan repetitif.</td>
+    <td><b>Stability</b><br>Keep services steady even under heavy traffic.</td>
+    <td><b>Visibility</b><br>Dashboards and alerts anyone (not just devs) can use.</td>
+    <td><b>Automation</b><br>Scripts and pipelines that trim repetitive work.</td>
   </tr>
 </table>
 
@@ -28,8 +28,8 @@ Centralized log pipeline, dashboards for error/latency/throughput, threshold + a
 Pull source, deploy to IIS/Windows Service, process logging, basic validation, and one-click rollback to cut human error.
 
 ## Portfolio
-- **EWS Log Monitoring – Elasticsearch & Python** (`github.com/ahmadeko2017/ews-log-monitoring`)  
-  Python 3.11 app + Docker/Jenkins pipeline untuk Early Warning System berbasis log: query Elasticsearch, jalankan rules (error 5xx naik, login gagal berulang, transaksi bernilai tinggi), dan kirim alert ke channel (console; siap dikembangkan ke Telegram/Slack/email). Config via `.env` + YAML, rules/notifier dapat diperluas untuk kebutuhan bisnis lain.
+[**EWS Log Monitoring – Elasticsearch & Python**](https://github.com/ahmadeko2017/ews-log-monitoring)  
+Python 3.11 app with Docker/Jenkins pipeline for a log-driven Early Warning System: queries Elasticsearch, runs rules (5xx error-rate spikes, repeated login failures, high-value transactions), and sends alerts to channels (console now; ready to extend to Telegram/Slack/email). Configurable via `.env` + YAML with easily extensible rules and notifiers.
 
 ## Ops playbook
 1) Map critical business signals, not just server metrics.  
