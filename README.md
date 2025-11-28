@@ -27,6 +27,10 @@ Centralized log pipeline, dashboards for error/latency/throughput, threshold + a
 **Automation Deployment Tool (PowerShell GUI)**  
 Pull source, deploy to IIS/Windows Service, process logging, basic validation, and one-click rollback to cut human error.
 
+## Portfolio
+- **EWS Log Monitoring – Elasticsearch & Python** (`github.com/ahmadeko2017/ews-log-monitoring`)  
+  Python 3.11 app + Docker/Jenkins pipeline untuk Early Warning System berbasis log: query Elasticsearch, jalankan rules (error 5xx naik, login gagal berulang, transaksi bernilai tinggi), dan kirim alert ke channel (console; siap dikembangkan ke Telegram/Slack/email). Config via `.env` + YAML, rules/notifier dapat diperluas untuk kebutuhan bisnis lain.
+
 ## Ops playbook
 1) Map critical business signals, not just server metrics.  
 2) Build observability: log ingest, metrics, dashboards, alerts anyone can read.  
